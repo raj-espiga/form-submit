@@ -53,12 +53,14 @@ export default function LoginScreen() {
         ) : null}
       </View>
 
-      <Button title='Login' onPress={handleSubmit} />
+      <View style={{width: '80%', marginLeft: '10%'}}>
+        <Button title='Login' onPress={handleSubmit} />
+      </View>
 
       <Text style={styles.textOR}>OR</Text>
 
       <TouchableOpacity style={styles.facebookLoginButton}>
-        <Text style={styles.textButton}>Login with Facevook</Text>
+        <Text style={styles.textButton}>Login with Facebook</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
